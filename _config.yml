@@ -1,0 +1,27 @@
+# Site settings
+title: Bud 'n' Burger
+description:
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+social:
+  twitter:
+  facebook:
+  instagram:
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+
+sass:
+  sass_dir: /assets/_sass
+  style: compressed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
