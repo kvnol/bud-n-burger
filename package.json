@@ -4,7 +4,7 @@
   "description": ":burger: Bud 'N' Burger",
   "main": "index.js",
   "scripts": {
-    "start": "gulp && bundle exec jekyll serve -L",
+    "start": "gulp && bundle exec jekyll serve",
     "build": "gulp && bundle exec jekyll build",
     "stage": "gulp && bundle exec jekyll build && git push origin stage",
     "deploy": "gulp && bundle exec jekyll build && git push origin deploy"

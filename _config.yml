@@ -25,3 +25,7 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+  - gulpfile.js
+  - package.json
+  - README.md
+  - LICENSE
