@@ -1,0 +1,19 @@
+{
+  "name": "bud-n-burger",
+  "version": "1.0.0",
+  "description": ":burger: Bud 'N' Burger",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kvnol/bud-n-burger.git"
+  },
+  "author": "@kvnol",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kvnol/bud-n-burger/issues"
+  },
+  "homepage": "https://github.com/kvnol/bud-n-burger#readme"
+}
