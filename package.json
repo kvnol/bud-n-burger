@@ -4,7 +4,10 @@
   "description": ":burger: Bud 'N' Burger",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "gulp && bundle exec jekyll serve -L",
+    "build": "gulp && bundle exec jekyll build",
+    "stage": "gulp && bundle exec jekyll build && git push origin stage",
+    "deploy": "gulp && bundle exec jekyll build && git push origin deploy",
   },
   "repository": {
     "type": "git",
