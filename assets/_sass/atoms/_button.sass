@@ -1,6 +1,13 @@
 %button
   padding: .6rem 1.4rem
   font-size: 1.4rem
-  text-transform: uppercase
+  text:
+    decoration: none
+    transform: uppercase
   color: $light
   background-color: $color-primary
+  cursor: pointer
+  transition: .2s all ease
+
+  &:hover
+    background-color: darken($color-primary, 10%)
