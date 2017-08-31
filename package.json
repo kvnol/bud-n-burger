@@ -4,7 +4,7 @@
   "description": ":burger: Bud 'N' Burger",
   "main": "index.js",
   "scripts": {
-    "start": "gulp && bundle exec jekyll serve",
+    "start": "gulp && bundle exec jekyll serve --incremental",
     "build": "gulp && bundle exec jekyll build",
     "stage": "gulp && bundle exec jekyll build && git push origin stage",
     "deploy": "gulp && bundle exec jekyll build && git push origin deploy"
@@ -21,9 +21,11 @@
   "homepage": "https://github.com/kvnol/bud-n-burger#readme",
   "devDependencies": {
     "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.7.0",
     "gulp-cli": "^1.4.0",
     "gulp-concat": "^2.6.1",
     "gulp-typescript": "^3.2.2",
-    "normalize.css": "^7.0.0"
+    "normalize.css": "^7.0.0",
+    "typescript": "^2.4.2"
   }
 }

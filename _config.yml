@@ -1,8 +1,8 @@
 # Site settings
 title: Bud 'n' Burger
 description:
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: ""
+url: ""
 social:
   twitter:
   facebook:
@@ -14,7 +14,7 @@ plugins:
   - jekyll-feed
 
 sass:
-  sass_dir: /assets/_sass
+  sass_dir: assets/_sass
   style: compressed
 
 exclude:

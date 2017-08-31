@@ -10,7 +10,13 @@
   <link rel="stylesheet" href="/assets/css/main.css">
 </head>
 <body>
-  {{ content }}
+  {% include header.html %}
+
+  <main class="main">
+    {{ content }}
+  </main>
+
+  {% include footer.html %}
 
   <script src="/assets/js/vendor.js"></script>
   <script src="/assets/js/main.js"></script>
