@@ -6,12 +6,14 @@ const censored = ((w, d) => {
   const modal = d.querySelector('[data-js="censored"]');
 
   if (Cookie.exists('ageGate')) {
+    w.addEventListener('load', () => {
+      body.classList.remove('is-censored');
+    }, 'false');
     return modal.remove();
   } else {
     btn.addEventListener('click', () => {
       Cookie.set('ageGate', { expires: 1 });
-      body.classList.remove('is-censored');
       return modal.remove();
-    }, 'false')
+    }, 'false');
   }
 })(window, document)
