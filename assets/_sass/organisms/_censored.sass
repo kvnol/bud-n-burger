@@ -1,0 +1,27 @@
+.is-censored
+  > .main
+    display: none
+
+.censored
+  height: 100%
+  text-align: center
+  background: rgba(0,0,0,.8)
+  @extend %flexbox
+  +align-items(center)
+  +justify-content(center)
+
+.censored-logo
+  display: block
+
+.censored-text
+  margin: 2rem 0
+  font-size: 1.6rem
+  text-transform: uppercase
+  color: $light
+
+.censored-actions
+  @extend %flexbox
+  +justify-content(space-evenly)
+
+.censored-actions_button
+  @extend %button

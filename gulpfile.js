@@ -1,21 +1,34 @@
 const gulp = require('gulp');
 const concat = require('gulp-concat');
 const ts = require('gulp-typescript');
+const uglify = require('gulp-uglify');
 const clean = require('gulp-clean-css');
 
 const files = {
   'js': [ 
-    './assets/js/_parts/*.js'
+    'assets/js/_parts/*.ts'
+  ],
+  'jsVendor': [
+    'assets/js/_vendor/*.js'
   ],
   'cssVendor': [
-    './node_modules/normalize.css/normalize.css'
+    'node_modules/normalize.css/normalize.css'
   ]
 }
 
 gulp.task('js', () => {
   gulp.src(files.js)
-    .pipe('main.js')
-    .pipe(ts())
+    .pipe(ts({
+      noImplicitAny: false,
+      outFile: 'main.js'
+    }))
+    .pipe(gulp.dest('assets/js'))
+});
+
+gulp.task('jsVendor', () => {
+  gulp.src(files.jsVendor)
+    .pipe(concat('vendor.js'))
+    .pipe(uglify())
     .pipe(gulp.dest('assets/js'))
 });
 
@@ -28,4 +41,4 @@ gulp.task('css', () => {
     .pipe(gulp.dest('assets/css'))
 });
 
-gulp.task('default', ['css']);
+gulp.task('default', ['js', 'jsVendor', 'css']);

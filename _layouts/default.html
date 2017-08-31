@@ -9,7 +9,8 @@
   <link rel="stylesheet" href="/assets/css/vendor.css">
   <link rel="stylesheet" href="/assets/css/main.css">
 </head>
-<body>
+<body class="is-censored">
+  {% include censored.html %}
   {% include header.html %}
 
   <main class="main">
@@ -17,7 +18,6 @@
   </main>
 
   {% include footer.html %}
-
   <script src="/assets/js/vendor.js"></script>
   <script src="/assets/js/main.js"></script>
 </body>
