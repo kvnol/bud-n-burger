@@ -2,13 +2,20 @@
   > .main
     display: none
 
+  .censored
+    @extend %flexbox
+    +align-items(center)
+    +justify-content(center)
+
 .censored
+  display: none
   height: 100%
   text-align: center
   background: rgba(0,0,0,.8)
-  @extend %flexbox
-  +align-items(center)
-  +justify-content(center)
+
+.censored-content
+  width: 430px
+  margin: 0 auto
 
 .censored-logo
   display: block
@@ -16,7 +23,6 @@
 .censored-text
   margin: 2rem 0
   font-size: 1.6rem
-  text-transform: uppercase
   color: $light
 
 .censored-actions

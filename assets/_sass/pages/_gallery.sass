@@ -1,0 +1,22 @@
+.fotos-gallery
+  @extend %flexbox
+  +flex-wrap(wrap)
+  +justify-content(space-around)
+
+.fotos-gallery_row
+  text-align: center
+
+.fotos-gallery_col
+  display: inline-block
+  margin: 0 .9375rem
+
+.fotos-gallery_item
+  position: relative
+  overflow: hidden 
+  width: 255px
+  height: 191px
+
+.fotos-gallery_image
+  position: absolute
+  display: block
+  margin: 1.875rem auto
