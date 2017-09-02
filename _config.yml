@@ -1,5 +1,5 @@
 # Site settings
-title: Bud 'n' Burger
+title: Bud ‘n’ Burger
 description:
 baseurl: ""
 url: ""
@@ -29,3 +29,16 @@ exclude:
   - package.json
   - README.md
   - LICENSE
+
+# Collections
+cidades:
+  - title:
+    state:
+
+bares:
+  - title:
+    image: 
+    state:
+    city:
+    district: 
+    address:
