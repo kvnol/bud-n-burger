@@ -10,6 +10,9 @@ var censored = (function (w, d) {
         return modal.remove();
     }
     else {
+        w.addEventListener('load', function () {
+            modal.classList.add('active');
+        }, 'false');
         btn.addEventListener('click', function () {
             Cookie.set('ageGate', { expires: 1 });
             return modal.remove();
