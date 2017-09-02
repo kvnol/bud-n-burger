@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="/assets/css/vendor.css">
   <link rel="stylesheet" href="/assets/css/main.css">
 </head>
-<body class="is-censored">
+<body class="{{ page.slug }} is-censored">
   {% include censored.html %}
   {% include header.html %}
 
@@ -19,6 +19,11 @@
   </main>
 
   {% include footer.html %}
+  {% if page.url == '/' %}
+    <div class="pedida">
+      <a href="http://www.pedidadehoje.com.br/" target="_blank"><p class="pedida-title">Clique aqui e saiba como gerar seu <strong>voucher de desconto</strong></p><img src="assets/img/bg-home_pedida.png" alt=""></a>
+    </div>
+  {% endif %}
   <script src="/assets/js/vendor.js"></script>
   <script src="/assets/js/main.js"></script>
 </body>
