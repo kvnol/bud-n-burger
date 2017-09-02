@@ -1,0 +1,44 @@
+.bar-content
+  @extend %flexbox
+  +align-items(center)
+  +flex-wrap(wrap)
+  +justify-content(space-between)
+
+.bar-item
+  min-width: 20rem
+  width: 30%
+  display: inline-block
+  margin-bottom: .9375rem
+
+  @media (max-width: 67.5rem)
+    width: 49%
+
+  @media (max-width: 50rem)
+    min-width: 100%
+    width: 100%
+
+.bar-item_title
+  display: block
+  padding: .625rem
+  font-size: 1.1rem
+  color: $light
+  background-color: #000
+
+.bar-item_image
+  position: relative
+  margin: 0
+
+  img
+    display: block
+    width: 100%
+
+.bar-item_info
+  margin:
+    bottom: 1rem
+    left: 1rem
+  line-height: 1rem
+
+.bar-item_info p
+  margin: 0
+  font-size: .9rem
+  color: $light

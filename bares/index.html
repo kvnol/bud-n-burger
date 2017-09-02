@@ -4,9 +4,91 @@ title: Bares
 description: Conheça os bares participantes do Bud ‘n’ Burger
 ---
 
-<article class="page">
-  <header class="page-header">
-    <h1 class="page-title">{{ page.title }}</h1>
-    <h2 class="page-subtitle">{{ page.description }}:</h2>
-  </header>
-</article>
+<section class="page bar">
+    <header class="page-header">
+      <h1 class="page-title">{{ page.title }}</h1>
+      <p class="page-subtitle">{{ page.description }}:</p>
+    </header>
+
+    <div class="bar-filters">
+      <select data-js="cidades" class="select bar-filter">
+        <option value="cidades">- Cidades</option>
+        {% for cidade in site.cidades %}
+          {% assign 
+            city = cidade.title |
+            replace: ' ', '-' |
+            replace: 'á', 'a' |
+            replace: 'à', 'a' |
+            replace: 'ã', 'a' |
+            replace: 'é', 'e' |
+            replace: 'í', 'i' |
+            replace: 'ó', 'o' |
+            replace: 'ú', 'u' |
+            downcase
+          %}
+          <option data-estado="{{ cidade.state }}" value="{{ city }}">{{ cidade.title }}</option>
+        {% endfor %}
+      </select>
+    </div>
+  
+    <div class="page-content bar-content">
+      {% for bar in site.bares %}
+        {% assign 
+          state = bar.state |
+          replace: ' ', '-' |
+          replace: 'á', 'a' |
+          replace: 'à', 'a' |
+          replace: 'ã', 'a' |
+          replace: 'é', 'e' |
+          replace: 'í', 'i' |
+          replace: 'ó', 'o' |
+          replace: 'ú', 'u' |
+          downcase
+        %}
+        {% assign 
+          city = bar.city |
+          replace: ' ', '-' |
+          replace: 'á', 'a' |
+          replace: 'à', 'a' |
+          replace: 'ã', 'a' |
+          replace: 'é', 'e' |
+          replace: 'í', 'i' |
+          replace: 'ó', 'o' |
+          replace: 'ú', 'u' |
+          downcase
+        %}
+        {% assign 
+          district = bar.district |
+          replace: ' ', '-' |
+          replace: 'á', 'a' |
+          replace: 'à', 'a' |
+          replace: 'ã', 'a' |
+          replace: 'é', 'e' |
+          replace: 'í', 'i' |
+          replace: 'ó', 'o' |
+          replace: 'ú', 'u' |
+          downcase
+        %}
+        <article
+          class="bar-item
+          {{ state }}
+          {{ city }}
+          {{ district }}">
+          <span class="bar-item_title">{{ bar.title }}</span>
+          <figure class="bar-item_image">
+            <img src="/assets/img/bares/{{ bar.image }}.jpg" alt="">
+            <figcaption class="bar-item_caption">
+              <div class="bar-item_info">
+                <p>{{ bar.city }}</p>
+                <p>{{ bar.address }}</p>
+              </div>
+              <nav class="bar-social">
+                <a class="bar-social_item bar-social_fb" href="{{ bar.facebook }}" data-name="{{ bar.title }}"></a>
+                <a class="bar-social_item bar-social_map" href="{{ bar.map }}" data-name="{{ bar.title }}"></a>
+              </nav>
+            </figcaption>
+          </figure>
+        </article>
+      {% endfor %}
+    </div>
+  </section>
