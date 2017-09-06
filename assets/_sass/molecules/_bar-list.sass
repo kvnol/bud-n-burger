@@ -30,10 +30,19 @@
 .bar-item_image
   position: relative
   margin: 0
+  height: 200px
+  overflow: hidden
 
-  img
-    display: block
+  > img
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    height: 200px
     width: 100%
+    display: block
+    object-fit: none
 
 .bar-item_info p
   margin: 0
