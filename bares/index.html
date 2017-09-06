@@ -101,9 +101,9 @@ description: Conheça os bares participantes do Bud ‘n’ Burger
                 </div>
                 <nav class="bar-social">
                   {% if bar.facebook %}
-                    <a class="bar-social_item bar-social_fb" href="https://facebook.com/{{ bar.facebook }}" data-name="{{ bar.title }}"><img src="/assets/img/facebook-icon.png" alt="Facebook"></a>
+                    <a class="bar-social_item bar-social_fb" href="https://facebook.com/{{ bar.facebook }}" target="_blank" data-name="{{ bar.title }}"><img src="/assets/img/facebook-icon.png" alt="Facebook"></a>
                   {% endif %}
-                  <a class="bar-social_item bar-social_map" href="{{ bar.map }}" data-name="{{ bar.title }}"><img src="/assets/img/pin-icon.png" alt="Google Maps"></a>
+                  <a class="bar-social_item bar-social_map" href="https://www.google.com/maps/search/?api=1&query={{ bar.title }}, {{ bar.city }}, {{ bar.address }}" target="_blank" data-name="{{ bar.title }}"><img src="/assets/img/pin-icon.png" alt="Google Maps"></a>
                 </nav>
               </footer>
             </figcaption>
