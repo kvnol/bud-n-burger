@@ -58,7 +58,6 @@ cidades:
     state: RJ
 
 bares:
-  
   - title: "Bulls Hamburgeria"
     description: "O monstrão! O egoísta leva 320g de carne (dois burgers de 160g), um mix de queijos fantásticos, alface, tomate, cebola roxa, maionese da casa e bacon crispy. Tudo no pão brioche."
     state: "Distrito Federal"
@@ -406,7 +405,7 @@ bares:
     district: "São José"
     address: "Rua Joaquim Vaz, 1459"
   
-  - title: "Sanduicheira da Ilha"
+  - title: "Sanduicheria da Ilha"
     description: "Burger da Casa: aquele mega hambúrguer que você come e fica com água na boca."
     state: "Santa Catarina"
     city: "Florianópolis"
