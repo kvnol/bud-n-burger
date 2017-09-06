@@ -34,6 +34,18 @@ description: Conheça os bares participantes do Bud ‘n’ Burger
     <div class="page-content bar-content">
       {% for bar in site.bares %}
         {% assign 
+          title = bar.title |
+          replace: ' ', '-' |
+          replace: 'á', 'a' |
+          replace: 'à', 'a' |
+          replace: 'ã', 'a' |
+          replace: 'é', 'e' |
+          replace: 'í', 'i' |
+          replace: 'ó', 'o' |
+          replace: 'ú', 'u' |
+          downcase
+        %}
+        {% assign 
           state = bar.state |
           replace: ' ', '-' |
           replace: 'á', 'a' |
@@ -76,16 +88,24 @@ description: Conheça os bares participantes do Bud ‘n’ Burger
           {{ district }}">
           <span class="bar-item_title">{{ bar.title }}</span>
           <figure class="bar-item_image">
-            <img src="/assets/img/bares/{{ bar.image }}.jpg" alt="">
+            <img src="/assets/img/bares/{{ state }}/{{ title }}.png" alt="{{ bar.title }}">
             <figcaption class="bar-item_caption">
-              <div class="bar-item_info">
-                <p>{{ bar.city }}</p>
-                <p>{{ bar.address }}</p>
-              </div>
-              <nav class="bar-social">
-                <a class="bar-social_item bar-social_fb" href="{{ bar.facebook }}" data-name="{{ bar.title }}"></a>
-                <a class="bar-social_item bar-social_map" href="{{ bar.map }}" data-name="{{ bar.title }}"></a>
-              </nav>
+              <article class="bar-item_article">
+                <h4 class="bar-item_article-title">{{ bar.title }}</h4>
+                <p class="bar-item_article-text">{{ bar.description | truncate: 180 }}</p>
+              </article>
+              <footer class="bar-item_footer">
+                <div class="bar-item_info">
+                  <p>{{ bar.city }}</p>
+                  <p>{{ bar.address }}</p>
+                </div>
+                <nav class="bar-social">
+                  {% if bar.facebook %}
+                    <a class="bar-social_item bar-social_fb" href="https://facebook.com/{{ bar.facebook }}" data-name="{{ bar.title }}"><img src="/assets/img/facebook-icon.png" alt="Facebook"></a>
+                  {% endif %}
+                  <a class="bar-social_item bar-social_map" href="{{ bar.map }}" data-name="{{ bar.title }}"><img src="/assets/img/pin-icon.png" alt="Google Maps"></a>
+                </nav>
+              </footer>
             </figcaption>
           </figure>
         </article>
