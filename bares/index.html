@@ -24,6 +24,7 @@ description: Conheça os bares participantes do Bud ‘n’ Burger
             replace: 'í', 'i' |
             replace: 'ó', 'o' |
             replace: 'ú', 'u' |
+            replace: 'ç', 'c' |
             downcase
           %}
           <option data-estado="{{ cidade.state }}" value="{{ city }}">{{ cidade.title }}</option>
@@ -36,6 +37,8 @@ description: Conheça os bares participantes do Bud ‘n’ Burger
         {% assign 
           title = bar.title |
           replace: ' ', '-' |
+          replace: '.', '' |
+          replace: '&apos;', '' |
           replace: 'á', 'a' |
           replace: 'à', 'a' |
           replace: 'ã', 'a' |
@@ -44,6 +47,7 @@ description: Conheça os bares participantes do Bud ‘n’ Burger
           replace: 'ó', 'o' |
           replace: 'ô', 'o' |
           replace: 'ú', 'u' |
+          replace: 'ç', 'c' |
           downcase
         %}
         {% assign 
@@ -56,6 +60,7 @@ description: Conheça os bares participantes do Bud ‘n’ Burger
           replace: 'í', 'i' |
           replace: 'ó', 'o' |
           replace: 'ú', 'u' |
+          replace: 'ç', 'c' |
           downcase
         %}
         {% assign 
@@ -68,6 +73,7 @@ description: Conheça os bares participantes do Bud ‘n’ Burger
           replace: 'í', 'i' |
           replace: 'ó', 'o' |
           replace: 'ú', 'u' |
+          replace: 'ç', 'c' |
           downcase
         %}
         {% assign 
@@ -80,6 +86,7 @@ description: Conheça os bares participantes do Bud ‘n’ Burger
           replace: 'í', 'i' |
           replace: 'ó', 'o' |
           replace: 'ú', 'u' |
+          replace: 'ç', 'c' |
           downcase
         %}
         <article
