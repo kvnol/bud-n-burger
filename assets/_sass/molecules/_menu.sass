@@ -10,7 +10,20 @@
   font-size: 1.6rem
   color: $light
 
+  @media (max-width: 43.125rem)
+    display: block
+
+    &:not(:last-child)
+      margin:
+        right: 0
+        bottom: 1.2rem
+        left: 0
+
   &:hover,
   &--current
     padding-top: 1.25rem
     border-top: 2px solid $light
+
+    @media (max-width: 43.125rem)
+      padding-top: 0
+      border: 0
