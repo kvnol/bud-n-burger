@@ -421,7 +421,7 @@ bares:
     address: " Rua Henrique Veras do Nascimento, 50"
     facebook: "sanduicheriadailha.lagoa"
   
-  - title: "Burger Lab Chácara Flora"
+  - title: "Burger Lab"
     description: "O I.P.A Fusion é o hambúrguer perfeito. Pão de Brioche, double Burger Angus 120 gramas, crispy de cebola, infusão dos queijos cheddar e gorgonzola em cerveja IPA. É a perfeita pedida com Budweiser."
     state: "São Paulo"
     city: "São Paulo"
@@ -620,7 +620,7 @@ bares:
     district: "Barra da Tijuca"
     address: "Av. Olegário Maciel, 57"
 
-  - title: "Rota 66 Tijuca"
+  - title: "Rota 66"
     description: ""
     state: "Rio de Janeiro"
     city: "Rio de Janeiro"

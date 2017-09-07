@@ -39,6 +39,8 @@ description: Conheça os bares participantes do Bud ‘n’ Burger
           replace: ' ', '-' |
           replace: '.', '' |
           replace: '&apos;', '' |
+          replace: '&', 'and' |
+          replace: '?', '' |
           replace: 'á', 'a' |
           replace: 'à', 'a' |
           replace: 'ã', 'a' |
@@ -96,7 +98,7 @@ description: Conheça os bares participantes do Bud ‘n’ Burger
           {{ district }}">
           <span class="bar-item_title">{{ bar.title }}</span>
           <figure class="bar-item_image">
-            <img src="/assets/img/bares/{{ state }}/{{ title }}.png" alt="{{ bar.title }}">
+            <img src="/assets/img/bares/{{ state }}/{{ title | append: '.png' }}" alt="{{ bar.title }}">
             <figcaption class="bar-item_caption">
               <article class="bar-item_article">
                 <h4 class="bar-item_article-title">{{ bar.title }}</h4>
