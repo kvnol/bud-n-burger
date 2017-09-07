@@ -8,7 +8,7 @@ layout: compress
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>{{ page.title }} - {{ site.title }}</title>
+  <title>{% if page.url == '/' %}{{ site.title }}{% else %}{{ page.title }} - {{ site.title }}{% endif %}</title>
   <meta name="description" content="{{ page.description }}">
 
   <link rel="stylesheet" href="/assets/css/vendor.css">
