@@ -15,6 +15,7 @@ var censored = (function (w, d) {
         }, 'false');
         btn.addEventListener('click', function () {
             Cookie.set('ageGate', { expires: 1 });
+            body.classList.remove('is-censored');
             return modal.remove();
         }, 'false');
     }

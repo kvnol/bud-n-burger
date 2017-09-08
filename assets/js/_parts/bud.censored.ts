@@ -16,6 +16,7 @@ const censored = ((w, d) => {
     }, 'false');
     btn.addEventListener('click', () => {
       Cookie.set('ageGate', { expires: 1 });
+      body.classList.remove('is-censored');
       return modal.remove();
     }, 'false');
   }
