@@ -50,8 +50,6 @@ cidades:
     state: SC
   - title: São Paulo
     state: SP
-  - title: Santo André
-    state: SP
   - title: Campinas
     state: SP
   - title: Rio de Janeiro
@@ -430,7 +428,7 @@ bares:
   - title: "Burger For You"
     description: "Old but gold - Pão de brioche, 160g do nosso Blend, queijo prato, alface, tomate, cebola roxa e maionese B4U"
     state: "São Paulo"
-    city: "Santo André"
+    city: "São Paulo"
     district: "Jardim"
     address: "Rua das figueiras, 301"
     facebook: "Burger4U"
@@ -438,14 +436,14 @@ bares:
   - title: "B. Factory"
     description: "Num pão brioche, carne com 20% de bacon e cebola, ketchup de mel, cheddar, ovo gema mole e cebola frita"
     state: "São Paulo"
-    city: "Santo André"
+    city: "São Paulo"
     district: "Jardim"
     address: "Av. Padre Manuel da Nóbrega, 236"
   
   - title: "U.S. Diner"
     description: "Breakfast - hambúrguer de 180 gramas numa cama de picles e bacon, coberto com o delicioso cheddar inglês e o tradicional ovo frito."
     state: "São Paulo"
-    city: "Santo André"
+    city: "São Paulo"
     district: "Jardim"
     address: "Rua das Aroeiras, 504"
     facebook: "usdinerusdiner"
