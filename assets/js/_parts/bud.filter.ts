@@ -5,7 +5,7 @@ const filter = ((win, doc) => {
   let city = doc.querySelector('[data-js="cidades"]');
   let district = doc.querySelector('[data-js="regioes"]');
 
-  if (win.location.pathname === '/bares/') {
+  if (win.location.pathname === '/hamburguerias/') {
     // state.addEventListener('change', barFilter, 'false');
     // state.addEventListener('change', disableSiblings, 'false');
     // state.addEventListener('change', removeCity, 'false');

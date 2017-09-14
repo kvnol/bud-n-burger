@@ -25,7 +25,7 @@ var filter = (function (win, doc) {
     var state = doc.querySelector('[data-js="estado"]');
     var city = doc.querySelector('[data-js="cidades"]');
     var district = doc.querySelector('[data-js="regioes"]');
-    if (win.location.pathname === '/bares/') {
+    if (win.location.pathname === '/hamburguerias/') {
         // state.addEventListener('change', barFilter, 'false');
         // state.addEventListener('change', disableSiblings, 'false');
         // state.addEventListener('change', removeCity, 'false');
