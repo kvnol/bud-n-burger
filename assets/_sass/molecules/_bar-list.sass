@@ -2,13 +2,14 @@
   @extend %flexbox
   +align-items(center)
   +flex-wrap(wrap)
-  +justify-content(space-between)
 
 .bar-item
   min-width: 20rem
   width: 30%
   display: inline-block
-  margin-bottom: .9375rem
+  margin:
+    right: .75rem
+    bottom: .9375rem
   color: $light  
 
   @media (max-width: 67.5rem)
