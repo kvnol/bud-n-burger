@@ -617,6 +617,13 @@ bares:
     district: "Barra da Tijuca"
     address: "Rua Alm. João Cândido Brasil, 35"
 
+  - title: "Rota 66"
+    description: "Rock Burguer - Blend de picanha e fraldinha, crispy onions, bacon, tomate, mix de 4 queijos com pimenta jalapeno e sour cream, servido em um delicioso pão de pimenta de tabasco. Acompanha batata frita com receita exclusiva."
+    state: "Rio de Janeiro"
+    city: "Rio de Janeiro"
+    district: "Copacabana"
+    address: "Av. Atlântica, 3092"
+
   - title: "Hamburgueria S.A."
     description: "Hamburguer de carne 100% Angus. Acompanhado de molho da casa, tomate, cebola, alface, rúcula, barbecue artesanal e mostarda."
     state: "Rio de Janeiro"
