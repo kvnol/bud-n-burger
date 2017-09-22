@@ -624,6 +624,13 @@ bares:
     district: "Copacabana"
     address: "Av. Atlântica, 3092"
 
+  - title: "Revolution Pub"
+    description: "Deliciosa carne artesanal 150g, pão feito na casa, cebola caramelada, queijo prato ou mussarela , alface rústica , molho especial , com duas rodelas de spice onions e acompanhada de uma generosa porção de batata frita."
+    state: "Rio de Janeiro"
+    city: "Rio de Janeiro"
+    district: "Freguesia"
+    address: "Rua Comandante Rubens Silva, 448"
+
   - title: "Hamburgueria S.A."
     description: "Hamburguer de carne 100% Angus. Acompanhado de molho da casa, tomate, cebola, alface, rúcula, barbecue artesanal e mostarda."
     state: "Rio de Janeiro"
