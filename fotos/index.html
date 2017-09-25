@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Fotos
-description: Em breve
+description: Confira as fotos do Bud ‘N’ Burger
 ---
 
 <section class="page fotos">
@@ -10,6 +10,10 @@ description: Em breve
     <p class="page-subtitle">{{ page.description }}</p>
   </header>
 
-  <div class="page-content fotos-content">
+  <div class="page-content fotos-gallery">
+    {% assign num = 18 %}
+    {% for i in (1..num) %}
+      <a href="/assets/img/fotos/800x600/{{ i | append: '.png' }}" class="fotos-gallery_item" data-fancybox="gallery"><img src="/assets/img/fotos/255x191/{{ i | append: '.png' }}" class="fotos-gallery_image" alt="Evento Botecagem 2017"></a>
+    {% endfor %}
   </div>
 </section>
