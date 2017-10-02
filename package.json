@@ -27,6 +27,7 @@
     "gulp-imagemin": "^3.3.0",
     "gulp-typescript": "^3.2.2",
     "gulp-uglify": "^3.0.0",
+    "lazyload": "^2.0.0-beta.2",
     "normalize.css": "^7.0.0",
     "typescript": "^2.4.2"
   }
